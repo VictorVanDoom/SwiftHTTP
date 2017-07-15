@@ -21,5 +21,8 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftHTTP"
+    name: "SwiftHTTP",
+    targets: [
+        Target(name: "SwiftHTTP")
+    ]
 )
