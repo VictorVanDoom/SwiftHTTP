@@ -578,10 +578,10 @@ public class DelegateManager: NSObject, URLSessionDataDelegate, URLSessionDownlo
         if let sec = sec , challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust {
             let space = challenge.protectionSpace
             if let trust = space.serverTrust {
-                if sec.isValid(trust, domain: space.host) {
-                    completionHandler(.useCredential, URLCredential(trust: trust))
-                    return
-                }
+//                if sec.isValid(trust, domain: space.host) {
+//                    completionHandler(.useCredential, URLCredential(trust: trust))
+//                    return
+//                }
             }
             completionHandler(.cancelAuthenticationChallenge, nil)
             return
